@@ -1,0 +1,76 @@
+<!-- Section Contacts -->
+<div class="section contacts scrollspy last" id="contact-section">
+    <!-- Title -->
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h5 class="grey-text text-darken-2 left-align">Contact Me</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m12 l6">
+            <ul class="collection collection-info z-depth-1">
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col s5 grey-text darken-1"><i class="material-icons">business</i> Address:</div>
+                        <div class="col s7 grey-text text-darken-4 right-align">
+                            358 W Jefferson St, Bensenville
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col s5 grey-text darken-1"><i class="material-icons">local_phone</i> Phone:</div>
+                        <div class="col s7 grey-text text-darken-4 right-align">
+                            <a href="tel:12562548456">+1 256 254 84 56</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="col s5 grey-text darken-1"><i class="material-icons">email</i> E-mail:</div>
+                        <div class="col s7 grey-text text-darken-4 right-align">
+                            <a href="mailto:smorgan@domain.com">smorgan@domain.com</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div class="row">
+                        <div class="map" id="map"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12 m12 l6">
+            <div class="card-panel">
+                <div class="contact-form">
+                    <form id="cform" method="post">
+                        <h5>Write a message:</h5>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" name="name" id="name_field" />
+                                <label for="name_field">Your Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input type="text" name="email" id="email_field" />
+                                <label for="email_field">Your Email</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input type="text" name="subject" id="subject_field" />
+                                <label for="subject_field">Subject</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea name="message" id="message_field" class="materialize-textarea"></textarea>
+                                <label for="message_field">Message</label>
+                            </div>
+                        </div>
+                        <a class="btn waves-effect waves-light" onclick="$('#cform').submit(); return false;">Send Message</a>
+                    </form>
+                    <div class="alert-success">
+                        <p>Thanks, your message is sent successfully. We will contact you shortly!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
